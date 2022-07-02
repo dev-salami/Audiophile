@@ -21,7 +21,7 @@ function header() {
             <button className="pt-4  md:text-left">
               <a
                 className="bg-[#d87d4a] hover:bg-[#fbaf85] text-white px-4 py-2"
-                href="/ProductDet"
+                href="/"
               >
                 SEE PRODUCT
               </a>
@@ -46,7 +46,7 @@ function header() {
               <button className="pt-4  ">
                 <a
                   className="bg-[#d87d4a] hover:bg-[#fbaf85] text-white px-4 py-2"
-                  href="/ProductDet"
+                  href="/"
                 >
                   SEE PRODUCT
                 </a>

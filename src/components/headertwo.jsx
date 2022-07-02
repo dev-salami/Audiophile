@@ -19,7 +19,7 @@ function headertwo() {
           <button className="pt-4  md:self-start ">
             <a
               className="bg-[#000] hover:bg-[#4c4c4c] text-white px-4 py-2"
-              href="/ProductDet"
+              href="/"
             >
               SEE PRODUCT
             </a>
@@ -35,7 +35,7 @@ function headertwo() {
         <button className="pt-4 self-start ">
           <a
             className="bg-transparent hover:text-white hover:bg-[#000] border-[1px] border-black  text-black px-4 py-2"
-            href="/ProductDet"
+            href="/"
           >
             SEE PRODUCT
           </a>
@@ -54,7 +54,7 @@ function headertwo() {
           <button className="pt-4  ">
             <a
               className="bg-transparent hover:text-white hover:bg-[#000] border-[1px] border-black  text-black px-4 py-2"
-              href="/ProductDet"
+              href="/"
             >
               SEE PRODUCT
             </a>

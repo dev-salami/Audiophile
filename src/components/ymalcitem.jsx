@@ -10,7 +10,7 @@ function productitem(props) {
           <button>
             <a
               className="bg-[#d87d4a] hover:bg-[#fbaf85] text-white px-4 py-2"
-              href="/ProductDet"
+              href="/"
             >
               SEE PRODUCT
             </a>
