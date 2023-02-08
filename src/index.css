@@ -34,3 +34,26 @@ code {
   background-repeat: no-repeat;
   border-radius: 8px;
 }
+.contain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "two one ."
+    "tre one ."
+    ". . .";
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.tre {
+  grid-area: tre;
+}

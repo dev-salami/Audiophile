@@ -4,7 +4,7 @@ import Imag from "../assets/home/desktop/image-earphones-yx1.jpg";
 function headertwo() {
   return (
     <section>
-      <div className="bg-[#d87d4a] md:h-[650px] md:items-end rounded-lg md:my-12 mt-12 md:mt-0 items-center py-8 md:py-0  justify-around flex flex-col md:flex-row max-w-[1000px] mx-auto">
+      <div className="bg-[#d87d4a] md:h-[650px] md:items-end rounded-lg md:my-12 mt-20 md:mt-0 items-center py-8 md:py-0  justify-around flex flex-col md:flex-row max-w-[1000px] mx-auto">
         <div className="flex  md:items-end justify-center  md:max-w-[40%] mb-[-5px] max-w-[55%]">
           <img src={Image} alt="" />
         </div>
