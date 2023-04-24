@@ -1,9 +1,9 @@
-import Earphones from "./components/Earphones";
-import Speaker from "./components/speaker";
-import Headphones from "./components/headphones";
+import Earphones from "./pages/Earphones";
+import Speaker from "./pages/speaker";
+import Headphones from "./pages/headphones";
 // import Features from "./components/features";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./components/home";
+import Home from "./pages/home";
 // import CheckoutForm1 from "./components/checkout";
 // import Product from "./components/Product";
 
@@ -15,16 +15,20 @@ function App() {
 				<Route
 					exact
 					path="/"
-					element={<Home />}></Route>
+					element={<Home />}
+				/>
 				<Route
 					path="/Headphones"
-					element={<Headphones />}></Route>
+					element={<Headphones />}
+				/>
 				<Route
 					path="/Speakers"
-					element={<Speaker />}></Route>
+					element={<Speaker />}
+				/>
 				<Route
 					path="/Earphones"
-					element={<Earphones />}></Route>
+					element={<Earphones />}
+				/>
 			</Routes>
 		</Router>
 	);
