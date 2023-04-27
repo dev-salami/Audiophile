@@ -1,15 +1,36 @@
 import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { toggleCart } from "../Features/Cart/cartSlice";
 
 function Cart() {
+	const showCart = useSelector((state) => state.cart.showCart);
+	const dispatch = useDispatch();
+	const toggleCartFn = () => {
+		dispatch(toggleCart());
+	};
+
 	return (
-		<section className="bg-black/60 absolute inset-0">
-			<div className="bg-white w-[30rem] max-h-[60vh] text-sm rounded-xl overflow-y-auto p-4 float-right mr-20 mt-20  ">
+		<section
+			className={` z-[1000] duration-500 fixed inset-0 ${
+				!showCart && "opacity-0 scale-0"
+			}`}>
+			<div
+				onClick={toggleCartFn}
+				className={`bg-black/70 fixed inset-0 duration-500 ${
+					!showCart && "opacity-0 scale-0"
+				}`}></div>
+			<div
+				className={`bg-white w-[30rem] max-h-[60vh] text-sm rounded-xl overflow-y-auto p-4 float-right mr-20 mt-20 duration-500 ${
+					showCart ? "opacity-100 scale-100" : "opacity-0 scale-0"
+				} `}>
 				<div className="font-semibold flex justify-between p-4">
 					<div>
 						<span>CART</span>
 						<span className="ml-1">(3)</span>
 					</div>
-					<button className="text-gray-500 hover:text-gray-700 duration-500">
+					<button
+						onClick={toggleCartFn}
+						className="text-gray-500 hover:text-gray-700 duration-500">
 						Clear Cart
 					</button>
 				</div>
@@ -33,9 +54,15 @@ function Cart() {
 					<p className="text-gray-500">TOTAL</p>
 					<span>$2.999</span>
 				</div>
-				<button className="bg-orange-500 text-white hover:bg-orange-400 duration-500 p-4 w-full ">
-					CHECKOUT
-				</button>
+				{showCart ? (
+					<button className="bg-orange-500 text-white hover:bg-orange-400 duration-500 p-4 w-full ">
+						CHECKOUT
+					</button>
+				) : (
+					<button className="bg-green-500 text-white hover:bg-green-400 duration-500 p-4 w-full ">
+						CHECKOUT
+					</button>
+				)}
 			</div>
 		</section>
 	);
