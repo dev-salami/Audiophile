@@ -4,10 +4,11 @@ import Headphones from "./pages/headphones";
 // import Features from "./components/features";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
-import CheckoutForm1 from "./components/checkout";
-import Cart from "./components/cart";
 import Product from "./pages/Product";
-import Productdet from "./components/Productdet";
+import Productdet from "./pages/SingleProduct";
+import Producet from "./components/Product";
+import SingleProduct from "./pages/SingleProduct";
+import Error from "./pages/Error";
 // import CheckoutForm1 from "./components/checkout";
 // import Product from "./components/Product";
 
@@ -22,20 +23,20 @@ function App() {
 					element={<Home />}
 				/>
 				<Route
-					path="/Headphones"
+					path="/headphones"
 					element={<Headphones />}
 				/>
 				<Route
-					path="/Speakers"
+					path="/speakers"
 					element={<Speaker />}
 				/>
 				<Route
-					path="/Earphones"
+					path="/earphones"
 					element={<Earphones />}
 				/>
 				<Route
 					path="/test"
-					element={<Cart />}
+					element={<Producet />}
 				/>
 				<Route
 					path="/product"
@@ -44,7 +45,11 @@ function App() {
 
 				<Route
 					path="product/:name"
-					element={<Productdet />}
+					element={<SingleProduct />}
+				/>
+				<Route
+					path="*"
+					element={<Error />}
 				/>
 			</Routes>
 		</Router>
