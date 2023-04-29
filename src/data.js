@@ -46,7 +46,7 @@ const products = [
 	},
 	{
 		id: 3,
-		name: "XX99 MARK II HEADPHONES",
+		name: "XX99 MARK I HEADPHONES",
 		category: "headphones",
 		details:
 			"As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.",
