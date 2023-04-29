@@ -2,8 +2,8 @@ import Sharednav from "../components/sharednav";
 import Productitem from "../components/productitem";
 import Productlink from "../components/productlink";
 import Productitm from "../components/productitm";
-import Advert from "../components/advert";
-import Footer from "../components/footer";
+import Advert from "../components/Advert";
+import Footer from "../components/Footer";
 function speaker() {
 	return (
 		<>
@@ -14,6 +14,8 @@ function speaker() {
 				imagetre={require("../assets/product-zx7-speaker/mobile/image-category-page-preview.jpg")}
 				name="ZX7 SPEAKER"
 				detail="Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use."
+				link="zx7-speaker"
+				id="6"
 			/>
 			<Productitm
 				imageone={require("../assets/product-zx9-speaker/desktop/image-category-page-preview.jpg")}
@@ -21,6 +23,8 @@ function speaker() {
 				imagetre={require("../assets/product-zx9-speaker/mobile/image-category-page-preview.jpg")}
 				name="ZX9 SPEAKER"
 				detail="Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups."
+				link="zx9-speaker"
+				id="1"
 			/>
 			<Productlink />
 			<Advert />

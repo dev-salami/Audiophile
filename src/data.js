@@ -24,6 +24,7 @@ const products = [
 	{
 		id: 2,
 		name: "XX99 MARK II HEADPHONES ",
+		link: "xx99-mark-ii-headphones",
 		category: "headphones",
 		details:
 			"The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.",
@@ -47,6 +48,8 @@ const products = [
 	{
 		id: 3,
 		name: "XX99 MARK I HEADPHONES",
+		link: "xx99-mark-ii-headphones",
+
 		category: "headphones",
 		details:
 			"As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.",
@@ -69,6 +72,7 @@ const products = [
 	{
 		id: 4,
 		name: "XX59 HEADPHONES",
+		link: "xx59-headphones",
 		category: "headphones",
 		details: `Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.`,
 		features: `These headphones have been created from durable, high-quality materials tough enough to take anywhere. Its compact folding design fuses comfort and minimalist style making it perfect for travel. Flawless transmission is assured by the latest wireless technology engineered for audio synchronization with videos.
@@ -90,6 +94,8 @@ const products = [
 	{
 		id: 5,
 		name: "YX1 WIRELESS EARPHONES",
+		link: "yx1-wireless-earphones",
+
 		category: "earphones",
 		details:
 			"Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.",
@@ -113,6 +119,8 @@ const products = [
 	{
 		id: 6,
 		name: "ZX7 SPEAKER",
+		link: "zx7-speaker",
+
 		category: "speaker",
 		details:
 			"Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.",
