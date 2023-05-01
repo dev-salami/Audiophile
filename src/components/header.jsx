@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import image from "../assets/home/desktop/image-her.jpg";
 import imaget from "../assets/home/tablet/image-header.jpg";
 import Zoom from "react-reveal/Zoom";
@@ -18,13 +19,13 @@ function header() {
 							Experience natural, lifelike audio and exceptional build quality
 							made for the passionate music enthusiast.
 						</p>
-						<button className="pt-4  md:text-left">
-							<a
+						<div className="pt-4  md:text-left">
+							<Link
 								className="bg-[#d87d4a] hover:bg-[#fbaf85] text-white px-4 py-2"
-								href="/product/2">
+								to="/product/xx99-mark-ii-headphones">
 								SEE PRODUCT
-							</a>
-						</button>
+							</Link>
+						</div>
 					</div>
 					<div className="lg:max-w-[50%] ">
 						<img
@@ -46,13 +47,13 @@ function header() {
 								Experience natural, lifelike audio and exceptional build quality
 								made for the passionate music enthusiast.
 							</p>
-							<button className="pt-4  ">
-								<a
+							<div className="pt-4  ">
+								<Link
 									className="bg-[#d87d4a] hover:bg-[#fbaf85] text-white px-4 py-2"
-									href="/">
+									to="/product/xx99-mark-ii-headphones">
 									SEE PRODUCT
-								</a>
-							</button>
+								</Link>
+							</div>
 						</div>
 						<div className="max-w-[800px] mx-auto  ">
 							<img

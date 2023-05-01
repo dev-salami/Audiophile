@@ -1,6 +1,7 @@
 import Fade from "react-reveal/Fade";
 import { BsTwitter } from "react-icons/bs";
 import { FaLinkedin, FaFacebook } from "react-icons/fa";
+import { Link } from "react-router-dom";
 function Footer() {
 	return (
 		<Fade
@@ -13,20 +14,28 @@ function Footer() {
 					<div className="text-white pb-8   container flex md:flex-row flex-col items-center  justify-center space-y-4 sm:space-y-0 sm:justify-between  ">
 						<span className="text-bold text-2xl">Audiophile</span>
 						<div>
-							<ul className="md:space-y-0 text-sm space-y-4  mt-3 flex-col sm:flex md:flex-row md:space-x-4 ">
-								<li className="transition ease-in-out duration-700 hover:text-orange-400">
-									<a href="/Home">HOME</a>
-								</li>
-								<li className="transition ease-in-out duration-700 hover:text-orange-400">
-									<a href="/Headphones">HEADPHONES</a>
-								</li>
-								<li className="transition ease-in-out duration-700 hover:text-orange-400">
-									<a href="/Speakers">SPEAKERS</a>
-								</li>
-								<li className="transition ease-in-out duration-700 hover:text-orange-400">
-									<a href="/Earphones">EARPHONES</a>
-								</li>
-							</ul>
+							<div className="md:space-y-0 text-sm space-y-4  mt-3 flex-col sm:flex md:flex-row md:space-x-4 ">
+								<Link
+									to="/"
+									className="transition ease-in-out duration-700 hover:text-orange-400">
+									HOME
+								</Link>
+								<Link
+									to="/headphones"
+									className="transition ease-in-out duration-700 hover:text-orange-400">
+									HEADPHONES
+								</Link>
+								<Link
+									to="/speakers"
+									className="transition ease-in-out duration-700 hover:text-orange-400">
+									SPEAKERS
+								</Link>
+								<Link
+									to="earphones"
+									className="transition ease-in-out duration-700 hover:text-orange-400">
+									EARPHONES
+								</Link>
+							</div>
 						</div>
 					</div>
 					<div className="max-w[700px] mx-auto items-center flex flex-col md:justify-around md:space-x-8 md:space-y-0 space-y-8 md:flex-row">
@@ -37,33 +46,21 @@ function Footer() {
 							and visit our demo facility - we're open 7 days a week.
 						</p>
 						<div className="md:max-w-[40%] max-w-[70%]">
-							<ul className="text-white flex flex-row space-x-4 pb-8">
-								<li>
-									<a
-										className=" text-[#1DA1F2] "
-										href="/">
-										<BsTwitter size={20} />
-									</a>
-								</li>
-								<li>
-									<a
-										className=" text-blue-600 "
-										href="/">
-										<FaLinkedin size={20} />
-									</a>
-								</li>
-								<li>
-									<a
-										className=" text-blue-600 "
-										href="/">
-										<FaFacebook size={20} />
-									</a>
-								</li>
-							</ul>
+							<div className="text-white flex flex-row space-x-4 pb-8">
+								<button className=" text-[#1DA1F2] ">
+									<BsTwitter size={20} />
+								</button>
+								<button className=" text-blue-600 ">
+									<FaLinkedin size={20} />
+								</button>
+								<button className=" text-blue-600 ">
+									<FaFacebook size={20} />
+								</button>
+							</div>
 						</div>
 					</div>
 					<span className="text-gray-400 text-sm">
-						Copyright 2022. All Rights Reserved
+						Copyright 2023. All Rights Reserved
 					</span>
 				</div>
 			</section>
