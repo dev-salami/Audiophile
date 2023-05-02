@@ -5,7 +5,6 @@ import Headphones from "./pages/headphones";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 import Product from "./pages/Product";
-import Productdet from "./pages/SingleProduct";
 import Producet from "./components/Product";
 import SingleProduct from "./pages/SingleProduct";
 import Error from "./pages/Error";
