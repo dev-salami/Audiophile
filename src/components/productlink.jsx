@@ -4,7 +4,7 @@ import Earphones from "../assets/shared/desktop/image-category-thumbnail-earphon
 import icon from "../assets/shared/desktop/icon-arrow-right.svg";
 import Fade from "react-reveal/Fade";
 
-function productlink() {
+function Productlink() {
 	return (
 		<Fade
 			duration={1000}
@@ -88,4 +88,4 @@ function productlink() {
 		</Fade>
 	);
 }
-export default productlink;
+export default Productlink;
