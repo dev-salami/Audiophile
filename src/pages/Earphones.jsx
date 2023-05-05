@@ -3,11 +3,15 @@ import Productitem from "../components/productitem";
 import Productlink from "../components/productlink";
 import Advert from "../components/Advert";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 function Earphones() {
 	return (
 		<>
-			<Sharednav title="HEARPHONES" />
+			<Navbar />
+			<div className="h-32 md:h-52 flex justify-center items-center font-semibold text-center text-4xl bg-black text-white mt-[95px]">
+				HEARPHONES
+			</div>
 			<Productitem
 				imageone={require("../assets/product-yx1-earphones/desktop/image-category-page-preview.jpg")}
 				imagetwo={require("../assets/product-yx1-earphones/tablet/image-category-page-preview.jpg")}
