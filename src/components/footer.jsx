@@ -1,14 +1,9 @@
-import Fade from "react-reveal/Fade";
 import { BsTwitter } from "react-icons/bs";
 import { FaLinkedin, FaFacebook } from "react-icons/fa";
 import { Link } from "react-router-dom";
 function Footer() {
 	return (
-		<Fade
-			duration={1000}
-			delay={500}
-			right={true}
-			fraction={0.2}>
+		<>
 			<section className=" bg-black mt-28 pt-20 pb-8">
 				<div className=" flex  items-center space-y-8 flex-col justify-center container mx-auto px-20 ">
 					<div className="text-white pb-8   container flex md:flex-row flex-col items-center  justify-center space-y-4 sm:space-y-0 sm:justify-between  ">
@@ -64,7 +59,7 @@ function Footer() {
 					</span>
 				</div>
 			</section>
-		</Fade>
+		</>
 	);
 }
 export default Footer;

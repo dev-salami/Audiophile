@@ -2,13 +2,10 @@ import speaker from "../assets/shared/desktop/image-category-thumbnail-headphone
 import headphones from "../assets/shared/desktop/image-category-thumbnail-speakers.png";
 import Earphones from "../assets/shared/desktop/image-category-thumbnail-earphones.png";
 import icon from "../assets/shared/desktop/icon-arrow-right.svg";
-import Fade from "react-reveal/Fade";
 
 function Productlink() {
 	return (
-		<Fade
-			duration={1000}
-			delay={500}>
+		<>
 			<div className="py-28">
 				<div className="grid lg:grid-cols-3 grid-cols-1 gap-4 max-w-[95vw] mx-auto pt-40 justify-items-center lg:space-y-0 space-y-40">
 					<div className="relative w-[350px] h-[284px] bg-[#f2f2f2] rounded-lg ">
@@ -85,7 +82,7 @@ function Productlink() {
 					</div>
 				</div>
 			</div>
-		</Fade>
+		</>
 	);
 }
 export default Productlink;

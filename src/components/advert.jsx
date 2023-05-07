@@ -1,13 +1,9 @@
-import Zoom from "react-reveal/Zoom";
-
 import Imgone from "../assets/shared/desktop/image-best-gear.jpg";
 import Imgtwo from "../assets/shared/tablet/image-best-gear.jpg";
 import Imgtre from "../assets/shared/mobile/image-best-gear.jpg";
 function Advert() {
 	return (
-		<Zoom
-			duration={1000}
-			delay={500}>
+		<>
 			<div className="pt-28">
 				<div className="container mx-auto px-8  items-center lg:space-y-0 space-y-4 lg:justify-around flex lg:flex-row flex-col py-6 text-gray-400 ">
 					<div className="flex flex-col space-y-4 max-w-[90%] sm:max-w-[90%]  lg:max-w-[40%]">
@@ -47,7 +43,7 @@ function Advert() {
 					</div>
 				</div>
 			</div>
-		</Zoom>
+		</>
 	);
 }
 export default Advert;

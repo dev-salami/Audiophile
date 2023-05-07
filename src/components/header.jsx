@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
 import image from "../assets/home/desktop/image-her.jpg";
 import imaget from "../assets/home/tablet/image-header.jpg";
-import Zoom from "react-reveal/Zoom";
 
 function header() {
 	return (
-		<Zoom>
-			<section className="bg-[#191919] py-4 mt-[95px]  ">
+		<>
+			<section className="bg-[#191919] py-4  ">
 				<div className="lg:flex container  hidden  mx-auto justify-around">
 					<div className="md:max-w-[30%] max-w-[60%] flex flex-col pt-16  space-y-4 ">
 						<h1 className="text-gray-400 text-center  md:text-left">
@@ -65,7 +64,7 @@ function header() {
 					</div>
 				</div>
 			</section>
-		</Zoom>
+		</>
 	);
 }
 export default header;
