@@ -17,8 +17,8 @@ function App() {
 			<Routes>
 				{/* <Route exact path="/" element={<Features />}></Route> */}
 				<Route
-					exact
-					path="/"
+					// exact
+					index
 					element={<Home />}
 				/>
 				<Route

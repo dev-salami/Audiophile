@@ -1,13 +1,12 @@
-import Sharednav from "../components/sharednav";
 import Productitem from "../components/productitem";
 import Productlink from "../components/productlink";
-import Productitm from "../components/productitm";
 import Advert from "../components/Advert";
 import Footer from "../components/Footer";
-function headphones() {
+import Navbar from "../components/Navbar";
+function Headphones() {
 	return (
 		<>
-			<Sharednav title="HEADPHONES" />
+			<Navbar />
 			<Productitem
 				imageone={require("../assets/product-xx59-headphones/desktop/image-category-page-preview.jpg")}
 				imagetwo={require("../assets/product-xx59-headphones/tablet/image-category-page-preview.jpg")}
@@ -16,7 +15,8 @@ function headphones() {
 				detail="Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move."
 				link="xx59-headphones"
 			/>
-			<Productitm
+			<Productitem
+				alt="true"
 				imageone={require("../assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg")}
 				imagetwo={require("../assets/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg")}
 				imagetre={require("../assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg")}
@@ -38,4 +38,4 @@ function headphones() {
 		</>
 	);
 }
-export default headphones;
+export default Headphones;

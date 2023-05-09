@@ -1,13 +1,12 @@
-import Sharednav from "../components/sharednav";
 import Productitem from "../components/productitem";
 import Productlink from "../components/productlink";
-import Productitm from "../components/productitm";
 import Advert from "../components/Advert";
 import Footer from "../components/Footer";
-function speaker() {
+import Navbar from "../components/Navbar";
+function Speaker() {
 	return (
 		<>
-			<Sharednav title="SPEAKERS" />
+			<Navbar />
 			<Productitem
 				imageone={require("../assets/product-zx7-speaker/desktop/image-category-page-preview.jpg")}
 				imagetwo={require("../assets/product-zx7-speaker/tablet/image-category-page-preview.jpg")}
@@ -17,7 +16,8 @@ function speaker() {
 				link="zx7-speaker"
 				id="6"
 			/>
-			<Productitm
+			<Productitem
+				alt="true"
 				imageone={require("../assets/product-zx9-speaker/desktop/image-category-page-preview.jpg")}
 				imagetwo={require("../assets/product-zx9-speaker/tablet/image-category-page-preview.jpg")}
 				imagetre={require("../assets/product-zx9-speaker/mobile/image-category-page-preview.jpg")}
@@ -32,4 +32,4 @@ function speaker() {
 		</>
 	);
 }
-export default speaker;
+export default Speaker;

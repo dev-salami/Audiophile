@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar";
 // import aos from "aos"
 // import { useEffect } from "react";
 
-function home() {
+function Home() {
 	return (
 		<>
 			<Navbar />
@@ -19,4 +19,4 @@ function home() {
 		</>
 	);
 }
-export default home;
+export default Home;
