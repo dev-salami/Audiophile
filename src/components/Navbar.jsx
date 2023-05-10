@@ -33,7 +33,7 @@ function Navbar() {
 						HOME
 					</NavLink>
 
-					<Link
+					<NavLink
 						to="/headphones"
 						className={({ isActive }) =>
 							isActive
@@ -41,8 +41,8 @@ function Navbar() {
 								: "transition ease-in-out duration-700 hover:text-orange-400"
 						}>
 						HEADPHONES
-					</Link>
-					<Link
+					</NavLink>
+					<NavLink
 						to="/speakers"
 						className={({ isActive }) =>
 							isActive
@@ -50,8 +50,8 @@ function Navbar() {
 								: "transition ease-in-out duration-700 hover:text-orange-400"
 						}>
 						SPEAKERS
-					</Link>
-					<Link
+					</NavLink>
+					<NavLink
 						to="/earphones"
 						className={({ isActive }) =>
 							isActive
@@ -59,7 +59,7 @@ function Navbar() {
 								: "transition ease-in-out duration-700 hover:text-orange-400"
 						}>
 						EARPHONES
-					</Link>
+					</NavLink>
 				</div>
 				<button
 					className="transition ease-in-out duration-700 relative hover:text-orange-400"
