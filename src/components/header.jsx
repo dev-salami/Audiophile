@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import image from "../assets/home/desktop/image-her.jpg";
 import imaget from "../assets/home/tablet/image-header.jpg";
 
-function header() {
+function Header() {
 	return (
 		<>
 			<section className="bg-[#191919] py-4  ">
@@ -67,4 +67,4 @@ function header() {
 		</>
 	);
 }
-export default header;
+export default Header;
